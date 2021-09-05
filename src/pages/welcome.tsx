@@ -20,7 +20,7 @@ export function Welcome(){
             que precisar.
             </Text>
             <TouchableOpacity style={style.button}>
-                <Text>
+                <Text style={style.nextButton}>
                     {">"} 
                 </Text>
             </TouchableOpacity>
@@ -61,5 +61,9 @@ const style = StyleSheet.create({
     image:{
         width:292,
         height:284
+    },
+    nextButton:{
+        color: colors.white,
+        fontSize: 30,
     }
 })
