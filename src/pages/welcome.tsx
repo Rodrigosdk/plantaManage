@@ -11,6 +11,8 @@ import {
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors'
 
+import { Entypo } from "@expo/vector-icons";
+
 export function Welcome(){
     return(
         <View style={style.container}>
@@ -31,9 +33,9 @@ export function Welcome(){
             que precisar.
             </Text>
             <TouchableOpacity style={style.button}>
-                <Text style={style.nextButton}>
-                    {">"} 
-                </Text>
+                <Entypo style={style.nextButton}
+                    name="chevron-small-right"
+                />
             </TouchableOpacity>
         </View>
     )
