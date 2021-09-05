@@ -1,5 +1,12 @@
 import React from "react";
-import { View ,Text, Image, TouchableOpacity,StyleSheet} from "react-native";
+import { 
+    View,
+    Text, 
+    Image, 
+    TouchableOpacity,
+    StyleSheet,
+    Dimensions
+} from "react-native";
 
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors'
@@ -13,7 +20,11 @@ export function Welcome(){
             de forma fácil
             </Text>
 
-            <Image source={wateringImg} style={style.image}/>
+            <Image 
+            source={wateringImg} 
+            style={style.image}
+            resizeMode="contain"
+            />
             <Text style={style.subtitle}>
             Não esqueça mais de regar suas plantas. 
             Nós cuidamos de lembrar você sempre 
@@ -31,7 +42,7 @@ const style = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     },
 
     title:{
@@ -53,14 +64,12 @@ const style = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 16,
         marginRight: 10,
-        marginBottom:45,
         height: 56,
         width:56,
         
     },
     image:{
-        width:292,
-        height:284
+        height: Dimensions.get('window').width * 0.7 
     },
     nextButton:{
         color: colors.white,
