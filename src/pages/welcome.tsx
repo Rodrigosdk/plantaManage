@@ -19,8 +19,8 @@ export function Welcome(){
         <View style={style.container}>
             <Text style={style.title}>
             Gerencie {'\n'} 
-            suas plantas {'\n'} 
-            de forma fácil
+            suas plantas de {'\n'} 
+            forma fácil
             </Text>
 
             <Image 
@@ -45,7 +45,8 @@ const style = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        paddingHorizontal:20
     },
 
     title:{
@@ -54,7 +55,8 @@ const style = StyleSheet.create({
         textAlign: 'center',
         color: colors.heading,
         marginTop: 38,
-        fontFamily: fonts.heading
+        fontFamily: fonts.heading,
+        lineHeight:34
     },
     subtitle:{
         fontSize:17,
